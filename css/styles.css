@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg1: #ffffff;
+    --bg2: #111213;
+
+    --bgfooter1: #111213;
+    --bgfooter2: #202020;
+
+    --color1: #17479E;
+    --color2: #2a71f5;
+    --color3: #ffffff;
+    --color4: #ff7f23;
+
+    --text: #3d3d3d;
+    --text2: #fff;
+    --text3: #969696;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color4);
+}
+
+.social{
+    text-align: center;
+    color: var(--bg2);
+}
+
+
+h2{
+    color: var(--bg2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 0 auto;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color4);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color4);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color4);
+    color: var(--bg2);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+
+/* Organizar as divs lado a lado*/
+
+/*tablet*/
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .container-a
+     
+}
+/*desktop*/
+@media screen and (min-width: 60em) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 160vw;
+        height: 40vw;
+       
+      
+    }
+}
